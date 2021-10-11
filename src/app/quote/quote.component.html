@@ -1,12 +1,17 @@
 <div class="container">
     <h1>My Qoute App</h1>
-    <ul>
-        <div *ngFor='let quote of quotes;let i = index'>
-          <li>{{quote.name}}</li>
-          <button (click)='toggleDetails(i)'>Toggle Details</button>
-          <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+    <div class="row">
+        <div class="col-md-6">
+            <div *ngFor='let quote of quotes;let i = index'>
+                {{quote.name}} <br>
+                <button (click)='toggleDetails(i)'>Toggle Details</button>
+                <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+              </div>
         </div>
-      </ul>
+        <div class="col-md-6">
+            <app-quote-form></app-quote-form>
+        </div>
+    </div>
+    
 </div>
   
-<!-- <app-goal-detail *ngIf='goal.showDescription' [goal]='goal' (isComplete) = 'deleteGoal($event,i)'></app-goal-detail> -->
