@@ -14,7 +14,7 @@ Open your terminal
 change current directory to where you want it cloned
 type git clone git@github.com:monginadiana/quote.git
 press enter to create a local clone
-This is the live link for viewing my project https://monginadiana.github.io/week-3-Ip-Delani-Studio/
+This is the live link for viewing my project https://monginadiana.github.io/quote/
 
 ## Known Bugs
 
