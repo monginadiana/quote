@@ -1,1 +1,11 @@
-<p>quote works!</p>
+<div class="container">
+    <h1>My Qoute App</h1>
+    <ul>
+        <div *ngFor='let quote of quotes;let i = index'>
+          <li>{{quote.name}}</li>
+          <button (click)='toggleDetails(i)'>Toggle Details</button>
+          <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote'></app-quote-detail>
+        </div>
+      </ul>
+</div>
+  
