@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <h2 class="text-center">Inspire Someone</h2>
    
-    <form #quoteForm='ngForm'>
+    <form (ngSubmit)='submitQuote() ;quoteForm.resetForm({})' #quoteForm='ngForm'>
         <div class="form-group">
   
             <label for="name">Quote</label>
@@ -19,6 +19,7 @@
             </div>
         </div>
         <br>
-        <form (ngSubmit)='submitQuote() ;quoteForm.resetForm({})' #quoteForm='ngForm'>
+        <button type="submit" class="btn btn-success">Add Quote</button>
+   
     
 </div>
