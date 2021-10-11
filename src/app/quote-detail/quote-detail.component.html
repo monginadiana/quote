@@ -1,3 +1,7 @@
 <p>{{quote.author}}</p>
 <p>{{quote.completeDate|quotePipe}} Days ago</p>
-<button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
+<i (click)='likeButtonClick()' class="fas fa-thumbs-up fa-2x thumb-up vote"></i>
+{{numberOfLikes}} &nbsp;&nbsp;&nbsp;
+<i (click)='dislikeButtonClick()' class="fas fa-thumbs-down fa-2x thumb-down vote1"></i>
+{{numberOfDislikes}}
+<button (click)='quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
