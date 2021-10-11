@@ -8,9 +8,9 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[] = [
-    new Quote(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son', new Date(2019,6,9)),
-    new Quote(2,'Buy Cookies','I have to buy cookies for the parrot', new Date(2019,6,9)),
-    new Quote(3,'Get new Phone Case','Diana has her birthday coming up soon', new Date(2019,6,9)),
+    new Quote(1, 'The way to get started is to quit talking and begin doing. ', 'Walt Disney', new Date(2019,6,9)),
+    new Quote(2,'If life were predictable it would cease to be life, and be without flavor. ','Eleanor Roosevelt', new Date(2019,6,9)),
+    new Quote(3,'The greatest glory in living lies not in never falling, but in rising every time we fall.','Nelson Mandela', new Date(2019,6,9)),
     
   ];
   toggleDetails(index:number){
