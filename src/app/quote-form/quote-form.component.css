@@ -1,13 +1,18 @@
 button{
-    color: white ;
-    background:green
-    
+    border: none;
+    background-color: rgb(2, 31, 2);
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    outline: none;
+   
+   
 }
 h2{
     font-size: 20px;
     font-weight: bold;
     font-style: normal;
-    color: green;
+    color: rgb(2, 31, 2)
 }
 label{
     color: black;

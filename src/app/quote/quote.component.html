@@ -6,13 +6,16 @@
     </div>
     <br>
 
-    <div class="card">
-        <div *ngFor='let quote of quotes;let i = index'>
-            {{quote.name}} due on {{quote.completeDate|date|uppercase}}
-            <br>
-            <button (click)='toggleDetails(i)'>Toggle Details</button>
-            <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (isComplete)='deleteQuote($event,i)'>
-            </app-quote-detail>
+    <div class="">
+        <div  *ngFor='let quote of quotes;let i = index'>
+            <div class= "text-center  toogle">
+                {{quote.name}} due on {{quote.completeDate|date|uppercase}}
+                <br>
+                <button (click)='toggleDetails(i)'>See More</button>
+                <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (isComplete)='deleteQuote($event,i)'>
+                </app-quote-detail>
+            </div>
+        
         </div>
     </div>
 
